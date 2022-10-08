@@ -48,23 +48,44 @@ console.log(alumns);
 
 const placesToTravel = ["Japon", "Venecia", "Murcia", "Santander", "Filipinas", "Madagascar"];
 
-for(const place of placesToTravel){
-    console.log(place)
-};
-
-
+for (const place of placesToTravel) {
+  console.log(place);
+}
 
 // **Iteración #4: Probando For...in**
 
-// Usa un **for...in** para imprimir por consola los datos del alienígena.. 
+// Usa un **for...in** para imprimir por consola los datos del alienígena..
 // Puedes usar este objeto:
 const alien = {
-    name: 'Wormuck',
-    race: 'Cucusumusu',
-    planet: 'Eden',
-    weight: '259kg'
+  name: "Wormuck",
+  race: "Cucusumusu",
+  planet: "Eden",
+  weight: "259kg",
+};
+
+for (key in alien) {
+  console.log(`The property: ${key}, has the value of: ${alien[key]}`);
 }
 
-for(key in alien){
-    console.log(`The property: ${key}, has the value of: ${alien[key]}`)
+// **Iteración #5: Probando For**
+
+// Usa un bucle **for** para recorrer todos los destinos del array y elimina los elementos
+// que tengan el id 11 y 40. Imprime en un ***console log*** el array. Puedes usar este array:
+
+const placesToTravel2 = [
+  { id: 5, name: "Japan" },
+  { id: 11, name: "Venecia" },
+  { id: 23, name: "Murcia" },
+  { id: 40, name: "Santander" },
+  { id: 44, name: "Filipinas" },
+  { id: 59, name: "Madagascar" },
+];
+
+for (let i = 0; i < placesToTravel2.length; i++) {
+    const element = placesToTravel2[i]
+
+    if(element.id === 11 || element.id === 40){
+        placesToTravel2.splice(i,1)
+    }
 }
+console.log(placesToTravel2);
