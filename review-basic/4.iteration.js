@@ -16,7 +16,7 @@ function findArrayIndex(array, text) {
       return `Your name: ${text} exist? ${true}!!  and its positios is: ${array.indexOf(array[i])}`;
     }
   }
-  return `The existence of you name ${text} is ${false}`
+  return `The existence of you name ${text} is ${false}`;
 }
 
 console.log(findArrayIndex(names, "Caracol"));
