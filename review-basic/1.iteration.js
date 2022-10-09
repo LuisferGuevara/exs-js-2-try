@@ -12,24 +12,23 @@ const movies = [
   { title: "El gato con guantes", duration: 111, categories: ["comedia", "aventura", "animación"] },
 ];
 
-
-//Como buscamos un array que nos diga las categorías que tenemos, declaramos una varaible 
-//que sea un array vacio. 
+//Como buscamos un array que nos diga las categorías que tenemos, declaramos una varaible
+//que sea un array vacio.
 let categoriesArray = [];
 
 //Hacemos un bucle forof para iterar sobre el array movies, no necesitamos el incremento.
 for (const movie of movies) {
   //Como los datos de las categorias de cada elemento del array están dentro de un array
-  //nuevamente hacemos un bucle que recorra el array de las caterogias, en cada uno de los 
+  //nuevamente hacemos un bucle que recorra el array de las caterogias, en cada uno de los
   //elemento de movie
- for (const categories of movie.categories){
-  //Ponemos la condicion de que analice si nuestra variable no incluye algun elemento del 
-  //array categories dentro de cada elemento del array principal, que nos lo mande. 
-  //Una vez que lo incluya, si hay alguno repetido no lo metera, asi evitamos que se 
-  //duplique.
-  if(!categoriesArray.includes(categories)){
-    categoriesArray.push(categories)
+  for (const categories of movie.categories) {
+    //Ponemos la condicion de que analice si nuestra variable no incluye algun elemento del
+    //array categories dentro de cada elemento del array principal, que nos lo mande.
+    //Una vez que lo incluya, si hay alguno repetido no lo metera, asi evitamos que se
+    //duplique.
+    if (!categoriesArray.includes(categories)) {
+      categoriesArray.push(categories);
+    }
   }
- }
 }
 console.log(categoriesArray);
