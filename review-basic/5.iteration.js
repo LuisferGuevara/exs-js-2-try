@@ -6,8 +6,8 @@
 //  resultado. Si no se te ocurre como hacer un numero aleatorio no te preocupes! busca i
 //  nformación sobre la función de javascript **Math.random();**
 
-function rollDice(number) {
-  return `Your lucky number is: ${Math.floor(Math.random() * number)}`;
+function rollDice(numberOfSides) {
+  return `Your lucky number is: ${Math.ceil(Math.random() * numberOfSides)}`;
 }
 
 console.log(rollDice(6));
