@@ -14,11 +14,9 @@ let y = 10;
 let z = h + y;
 let vicky = 30;
 
-
 //--------------------------------------------------------------------------------
 
 // **Iteración #2: Variables avanzadas**
-
 
 // 1.1 Dado el siguiente javascript, cambia el valor de la propiedad age a 25.
 const character = { name: "Jack Sparrow", age: 10 };
@@ -54,41 +52,32 @@ globalBasePrice = 2500;
 car1.finalPrice = car1.basePrice + globalBasePrice;
 car2.finalPrice = car2.basePrice + globalBasePrice;
 
-
 //--------------------------------------------------------------------------------
-
-
 
 // **Iteración #3: Operadores**
 
-
 // 1.1 Multiplica 10 por 5 y muestra el resultado mediante console.log.
-let numA = 10; 
+let numA = 10;
 console.log(numA / 5);
 
 // 1.2 Divide 10 por 2 y muestra el resultado en un console.log.
 console.log(numA / 2);
 
 // 1.3 Muestra mediante un console.log el resto de dividir 15 por 9.
-let numB = 15; 
+let numB = 15;
 console.log(numB % 9);
 
 // 1.4 Usa el correcto operador de asignación que resultará en x = 15,
 // teniendo dos variables y = 10 y z = 5.
 y = 10;
 z = 5;
-x =  y + z;
-
+x = y + z;
 
 // 1.5 Usa el correcto operador de asignación que resultará en x = 50,
 // teniendo dos variables y = 10 y z = 5.
 x = y * z;
 
-
 //--------------------------------------------------------------------------------
-
-
-
 
 // **Iteración #4: Arrays**
 
@@ -97,36 +86,32 @@ const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
 console.log(avengers[0]);
 
 // 1.2 Cambia el primer elemento de avengers a "IRONMAN"
-avengers[0] = 'IRONMAN'
+avengers[0] = "IRONMAN";
 
 // 1.3 Console.log numero de elementos en el array usando la propiedad correcta de Array.
-console.log(avengers.length)
+console.log(avengers.length);
 
 // 1.4 Añade 2 elementos al array: "Morty" y "Summer".
 // Muestra en consola el último personaje del array
 const rickAndMortyCharacters = ["Rick", "Beth", "Jerry"];
-rickAndMortyCharacters.push('Morty', 'Summer');
+rickAndMortyCharacters.push("Morty", "Summer");
 console.log(rickAndMortyCharacters);
 
 // 1.5 Elimina el último elemento del array y muestra el primero y el último por consola.
-const rickAndMortyCharacters2 = ["Rick", "Beth", "Jerry", "Morty", "Summer", 
-"Lapiz Lopez"];
+const rickAndMortyCharacters2 = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
 rickAndMortyCharacters2.pop();
-console.log(rickAndMortyCharacters2[0], 'and', 
-    rickAndMortyCharacters2[rickAndMortyCharacters2.length-1]);
-
+console.log(
+  rickAndMortyCharacters2[0],
+  "and",
+  rickAndMortyCharacters2[rickAndMortyCharacters2.length - 1]
+);
 
 // 1.6 Elimina el segundo elemento del array y muestra el array por consola.
-const rickAndMortyCharacters3 = ["Rick", "Beth", "Jerry", "Morty", "Summer", 
-"Lapiz Lopez"];
-rickAndMortyCharacters3.splice(1,1);
+const rickAndMortyCharacters3 = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
+rickAndMortyCharacters3.splice(1, 1);
 console.log(rickAndMortyCharacters3);
 
-
-
 //--------------------------------------------------------------------------------------
-
-
 
 // **Iteración #5: Condicionales**
 
@@ -137,8 +122,8 @@ const number2 = 20;
 const number3 = 2;
 
 // // ejemplo
-if(number1 === 10){
-    console.log('number1 es estrictamente igual a 10')
+if (number1 === 10) {
+  console.log("number1 es estrictamente igual a 10");
 }
 
 if (number2 / number1 === 2) {
@@ -149,7 +134,7 @@ if (number1 !== number2) {
   console.log("number1 es estrictamente distinto a number2");
 }
 
-if ( number3 != number1) {
+if (number3 != number1) {
   console.log("number3 es distinto number1");
 }
 
@@ -161,30 +146,26 @@ if (number3 * 5 === number1 && number1 * 2 === number2) {
   console.log("number3 por 5 es igual a number1 Y number1 por 2 es igual a number2");
 }
 
-if (number2 / 2 === number1 || number1 / 5 === number3) {
+if (number2 / 2 === number1 || number1 / 5 === number3) {
   console.log("number2 entre 2 es igual a number1 O number1 entre 5 es igual a number3");
 }
 
-
-
 //--------------------------------------------------------------------------------------
-
-
 
 // **Iteración #6: Bucles**
 
 // 1.1 Crea un bucle for que vaya desde 0 a 9 y muestralo por consola.
 for (let index = 0; index < 10; index++) {
-     console.log(index)
- }
+  console.log(index);
+}
 
 // 1.2 Crea un bucle for que vaya desde 0 a 9 y muestralo por consola solo
 // cuando el resto del numero dividido entre 2 sea 0.
 
 for (let index = 0; index < 10; index++) {
-    if(index % 2 === 0){
-        console.log(index);
-    }
+  if (index % 2 === 0) {
+    console.log(index);
+  }
 }
 
 // 1.3 Crea un bucle para conseguir dormir contando ovejas.
@@ -193,10 +174,7 @@ for (let index = 0; index < 10; index++) {
 // y cambia el mensaje en la última vuelta a 'Dormido!'.
 
 for (let index = 0; index <= 10; index++) {
-    if(index === 10){
-        console.log('Dormido!');
-    }else(
-        console.log('Intentando dormir ..')
-    );
+  if (index === 10) {
+    console.log("Dormido!");
+  } else console.log("Intentando dormir ..");
 }
-
