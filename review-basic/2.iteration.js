@@ -81,3 +81,26 @@ for (const user of users) {
   }
 }
 console.log(suma / cont)
+
+
+//Opcion 3 
+let volume = 0;
+
+let count = 0
+
+
+
+for(const user of users){
+
+    for(const sound in user.favoritesSounds){
+
+        const audio = user.favoritesSounds[sound];
+
+        volume = volume + audio.volume;
+
+        count++;
+
+    }
+
+}
+console.log(volume / count)
