@@ -15,7 +15,7 @@ function swap(array, indexA, indexB) {
   //Igualamos el primer índice al segundo índice
   array[indexA] = array[indexB];
   //Igualamos el segundo indice al la variable cambio del princio, de esta forma hacemos
-  //un intercambio de indies y a su vez de posiciones.
+  //un intercambio de indices y a su vez de posiciones.
   array[indexB] = change;
   //Retornamos el array con sus indices alterados
   return array;
