@@ -13,7 +13,7 @@ const names = ["Caracol", "Mosquito", "Salamandra", "Ajolote"];
 function findArrayIndex(array, text) {
   for (let i = 0; i < array.length; i++) {
     if (text === array[i]) {
-      return `Your name: ${text} exist? ${true}!!  and its positios is: ${array.indexOf(array[i])}`;
+      return `Your name: ${text} exist? ${true}!!  and its position is: ${i}`;
     }
   }
   return `The existence of you name ${text} is ${false}`;

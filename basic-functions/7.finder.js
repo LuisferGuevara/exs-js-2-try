@@ -28,7 +28,7 @@ function finderName(param, nameToFind) {
     //es decir al nombre que esrtamos buscando que nos devuelva un true, porque existe
     // y ademas que no devuelva el indice de posicion dentro de dicho array
     if (param[i] === nameToFind) {
-      return `it exists?: ${true} and its position is: ${param.indexOf(param[i])}`;
+      return `it exists?: ${true} and its position is: ${i}`;
     }
   }
 
